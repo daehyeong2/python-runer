@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python Runner</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Python Runner</h1>
+		<form>
+			<div class="form-group">
+				<label for="code">Enter your Python code:</label>
+				<textarea class="form-control" rows="10" id="code"></textarea>
+			</div>
+			<button type="button" class="btn btn-primary" onclick="runCode()">Run</button>
+			<div id="output"></div>
+		</form>
+	</div>
+</body>
+</html>
