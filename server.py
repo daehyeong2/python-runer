@@ -43,8 +43,15 @@ def index():
             display: block;
             border-radius: 20px;
         }
-        p{
+        span{
             color : gray;
+        }
+        p{
+            background-color: white;
+            color: black;
+            overflow: auto;
+            max-height:200px;
+            max-width:500px;
         }
         form{
             display:flex;
@@ -53,6 +60,7 @@ def index():
         }
         input[type="submit"]{
             border-radius: 5px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -62,7 +70,8 @@ def index():
         <input type="text" name="code" class="code-box" />
         <input type="submit" value="Execute" />
     </form>
-    <p>Result: '''+result+'''</p>
+    <span>Result</span>
+    <p>'''+result+'''</p>
 </body>
 </html>
 '''
