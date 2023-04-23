@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Python Runner</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python code runner</title>
+    <style>
+        .code-box {
+            width: 200px;
+            height: 100px;
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-	<div class="container">
-		<h1>Python Runner</h1>
-		<form>
-			<div class="form-group">
-				<label for="code">Enter your Python code:</label>
-				<textarea class="form-control" rows="10" id="code"></textarea>
-			</div>
-			<button type="button" class="btn btn-primary" onclick="runCode()">Run</button>
-			<div id="output"></div>
-		</form>
-	</div>
+    <h1>Code Runner</h1>
+    <form action="execute" name="code" method="post">
+        <input type="text" name="code" class="code-box" />
+        <input type="submit" value="Execute" />
+    </form>
+    <p>Result: {{ result }}</p>
 </body>
+
 </html>
